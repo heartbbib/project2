@@ -3,31 +3,52 @@
 <head>
 	<meta charset="utf-8">
 	<title>캘리그라피 실용 키트</title>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 	<style type="text/css">
-		html{font-family: 'Noto Sans KR', sans-serif; 
+		html{font-family: 'Noto Serif KR', serif; 
 			scroll-behavior: smooth;
-			box-sizing: border-box;}
-		nav .logo{height: 40px}
+			box-sizing: border-box;
+			height: 100%;
+			padding: 0%;
+			margin: 0%}
+		body, h1, h2, p, div, ul, li{margin: 0; padding: 0}
+		img{width: 100%;
+			display: block;}
+		header{height: 600px;}
+		body{height: 100%;
+			padding: 0;
+			margin: 0}
+		section{background: skyblue;
+			display: block;
+			margin: auto;
+			width: 1300px}
+		nav{margin-top: 10px;
+			margin-bottom: 20px;}
+		nav .logo{height: 80px;
+    		width: 130px;
+    		line-height: 80px;
+    		text-align: center;
+    		float: left;
+    		margin-left: 50px;}
 		nav ul{margin: auto;
 			width: 600px;
-			height: 40px;
+			height: 80px;
 			float: right;
-			display: block;}
+			margin-right: 50px;}
 		nav ul li{list-style-type: none; 
-			width: 25%; height: 40px; 
+			width: 25%; 
+			line-height: 80px; 
 			text-align: center;
-			float: left}
-		nav ul li a:hover{display: block; line-height: 40px; text-align: center;}
-		header{background: url(1.png); height: 750px ; width: 100%; 
-			background-repeat: no-repeat;
-  			background-position: center;}
-		header p{font-size: 2em;
-			font-weight: 500;
-			color: white;
-			padding-right: 30px}
-		body, h1, h2, p, div, ul, li{margin: 0; padding: 0}
-		a{text-decoration: none;; color: black}
+			float: left;
+			font-size: 1.1em}
+		nav ul li a:hover{display: block; 
+			line-height: 80px; 
+			text-align: center;
+			transition: all 0.3s;
+			color: #4e8e6c }
+		a{display: block;
+			text-decoration: none; 
+			color: black}
 		h1{text-align: right;
     		font-size: 3em;
     		font-weight: 700;
@@ -39,71 +60,137 @@
     		font-weight: 500;
     		letter-spacing: -2px;
     		padding-top: }
-    	p{text-align: center;
-    		font-size: 1.2em}
-    	section{padding-top: 50px;}
+    	p{text-align: center;}
     	footer{padding-top: 40px; text-align: left}
-		.text-center{text-align: center}
-		.text-right{text-align: right}
-		.text-left{text-align: left}
-		.text-white{color: white}
-    	.bg-blue{background: blue}
-    	.bg-white{background: white}
-    	.bg-red{background: red}
-    	.bg-skyblue{background: skyblue}
-    	.bg-green{background: #4e8e6c}
-    	.row{width: 1200px; margin: auto; position: relative; z-index: 2}
-    	.row div{padding: 15px}
+    	
+		.container{position: fixed;
+ 			top: 0;
+    		left: 0;
+    		right: 0;
+    		min-width: 1000px;
+    		z-index: 100;
+    		padding-bottom: 20px;
+    		background: #fff;}
     	.flexbox{display: flex;}
-    	.col-1{width: 16.66%; padding: }
-    	.col-2{width: 33.33%}
-    	.col-3{width: 50%}
-    	.col-4{width: 66.66%}
-    	.col-5{width: 83.32%}
-    	.col-6{width: 100%}
-    	.h-400{height: 400px}
-    	.pt-500{padding-top: 600px}
+    	.row{width: 1000px; margin: auto;}
+		.row div{padding: 10px;}
+
+		.headimage{box-sizing: border-box;
+			width: 50%}
+		.headtext{box-sizing: border-box;
+			margin: 5px; width: 50%}
+		.headflex{padding-top: 50px; display: flex;
+    		justify-content: center; padding: 10px}
+
+    	.section1{width: 1300px; margin: 40px auto}
+    	.section2{width: 1300px; margin: 0px auto}
+
+    	.col-1{width: 16.66%;}
+    	.col-2{width: 33.33%;}
+    	.col-3{width: 50%;}
+    	.col-4{width: 66.66%;}
+    	.col-5{width: 83.32%;}
+    	.col-6{width: 100%;}
+
+    	.bg-none{background: none}
+    	.bg-white{background: white}
+    	.bg-mockup{background: #f0f0f0}
+    	.bg-green{background: #34946e}
+    	.bg-lightgreen{background: #61b591}
+    	.bg-mustard{background: #dcd064}
+    	.bg-darkgray{background: #4d4d4d}
+    	.bg-cream{background: #e2ddc0}
+    	.text-white{color: white}
+    	.bg-header{background-image: url('background.jpg');
+    			background-size: 100% auto;
+    			background-attachment: fixed;
+    			height: 720px}
+
+    	.text-center{text-align: center;}
+    	.text-left{text-align: left;}
+    	.text-right{text-align: right;}
+    	.text-cream{color: #e2ddc0}
+    	
+    	.left{float: left}
+    	.right{float: right}
 	</style>
 </head>
+
 <body>
-	<nav>
-		<div class="logo">
-			<a href="index.html">
-				<img src="brand.png">
-			</a>
+	<div class="container">
+		<nav id="navigation">
+			<div class="logo">
+				<a href="index.html"><img src="logo.png"></a>
+			</div>
+			<ul>
+				<li>
+				<a href="#a" target="">구매하기
+				</li>
+				<li>
+				<a href="#b" target="">실용키트
+				</li>
+				<li>
+				<a href="#c" target="">구성안내
+				</li>
+				<li>
+				<a href="#d" target="">상세정보
+				</li>
+			</ul>
 		</div>
-		<div class="row">
-			<ul class="col-4 flexbox">
-				<li><a>메뉴</a></li>
-				<li><a>마이페이지</a></li>
-				<li><a>장바구니</a></li>
-				<li><a>로그인</a></li>
 	</nav>
+
 	<script> console.log(66.66 + 16.66)</script>
-	<header>
-		<div class="abs"></div>
-		<div class="row text-center">
-			<div class="col-6">
-				<p class="pt-500 text-right">배워두면 쓸데 있는 글쓰기</p>
-				<h1> 캘리그라피 실용 키트</h1>
+<header class="bg-header">
+</header>
+
+<section>
+	<div class="bg-white section1 headflex" id="a">
+		<div class="col-3 ">
+			<div class="headimage">
+				<img src="0.png">
+			<div class="col-3 headtext">
+				<h2>캘리그라피 실용 키트</h2>
+				<p>가장 실용적인 문구만 모았다!</p>
+				<p>배워서 남 주는 글씨를 써보세요.</p>
 			</div>
 		</div>
-	</header>
-	<section class="" id="A">
-		<div class="row text-center  flexbox">
-			<div class="col-3 h-400">
-				<h2 class="">같은 내용이라도, 확실히 다르게.</h2>
-				<p>의사소통에 있어 내용만큼 중요한 것 , 전달하는 방법.
-				<br>'글씨는 마음의 거울이다'' 라는 말이 있을 만큼 
-				<br>실생활에서 자신을 표현하는 중요한 수단이 됩니다.</p>
+	</div>
+</section>
+
+	<section class="bg-white section2" id="b">
+		<div class="row flexbox">
+			<div class="col-3 bg-cream ">
+				<h2><img src=""></h2>
 			</div>
-			<div class="col-3 h-400">
-				<h2>왜 캘리그라피를 써야하는가?</h2>
-				<p>*캘리그래피 : Calligraphy 그리스어로 kallos 아름다움과 
-				<br>graphein 쓰다의 합성어로 '아름답게 쓰다' 라는 뜻</p>
+			<div class="col-3 bg-cream">
+				<h2 class="text-left">감성적 언어 전달</h2>
+				<p class="text-left">개인의 필체가 묻어나는 캘리그라피는 
+					<br>미적인 감성을 전달합니다.</p>
+			</div>
+		</div>
+		<div class="row flexbox">
+			<div class="col-3 bg-cream">
+				<h2 class="text-left">호감도 상승</h2>
+				<p class="text-left">글씨는 곧 사람의 마음을 형상화 합니다.
+				<br>아름다운 글씨로 호감도를 상승시켜 보세요.</p>
+			</div>
+			<div class="col-3 bg-cream">
+				<h2><img src=""></h2>
+			</div>
+		</div>
+		<div class="row flexbox">
+			<div class="col-3 bg-cream">
+				<h2><img src=""></h2>
+			</div>
+			<div class="col-3 bg-cream">
+				<h2 class="text-left">진정성</h2>
+				<p class="text-left">손글씨는 그것이 쓰여지기 까지의 
+					<br>시간과 정성을 고스란히 담고 있습니다. 
+				<br>중요한 메세지에 진심을 담아보세요.</p>
 			</div>
 		</div>
 	</section>
+
 	<footer class="">
 		<div class="row bg-green flexbox">
 			<div class="col-2 h-400">
@@ -117,6 +204,10 @@
 			<br>이메일 ye1ye2@namul.co.kr
 			<br>대표이사 윤예원
 			</p>
+			<div class="bg-white">
+				<a href="#navigation"> 맨 위로</a>
+			
+			</div>
 			</div>
 		</div>
 	</footer> 
